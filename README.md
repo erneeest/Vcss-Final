@@ -1,4 +1,4 @@
-# 🍪 Cookie Website  
+# 🍪 Cookie Website  | Ongoing Project
 
 This is a simple website I made for my girlfriend ❤️.  
 The theme is all about **cookies** 🍪
