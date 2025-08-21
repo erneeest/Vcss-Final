@@ -247,9 +247,14 @@ header{
     height: 100vh;
 }
 .cookie-bg{
-    position: absolute;
-    transform: translate(-17rem, 40rem);
+    display: flex;
+    justify-content: center;
+}
+.cookie-image{
+    width: 80rem;
     z-index: -1;
+    position: absolute;
+    transform: translate(0, -35rem);
 }
 
 .nav-layout{
@@ -294,7 +299,7 @@ header{
     border-radius: 3em;
     padding: 4rem;
     gap: 2rem;
-    background: rgb(77, 36, 39, .3);
+    background: rgb(77, 36, 39, .7);
     backdrop-filter: blur(1rem);
     color: var(--white);
     
@@ -322,3 +327,11 @@ header{
     width: 2.5rem;
 }
 
+
+@media (min-width: 41.25rem) {
+
+    .cookie-bg{
+        display: none;
+        justify-content: end;
+    }
+}
