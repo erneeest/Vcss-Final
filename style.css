@@ -256,6 +256,13 @@ span{
     z-index: -1;
     position: absolute;
     transform: translate(0, -35rem);
+    
+}
+
+nav{
+    display: grid;
+    justify-items: center;
+    height: var(--nav-height);
 }
 
 .nav-layout{
@@ -268,6 +275,11 @@ span{
     padding: 0 1.5rem;
     background: rgb(77, 36, 39, .3);
     backdrop-filter: blur(1rem);
+
+    position: fixed;    
+    width: 100%;
+    top: 0;
+    z-index: 10;    
 }
 
 .web-logo{
