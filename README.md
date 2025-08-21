@@ -1,6 +1,6 @@
 # 🍪 Cookie Website  | Ongoing Project
 
-This is a simple website I made for my girlfriend ❤️.  
+This is a simple website I made for my girlfriend💜.  
 The theme is all about **cookies** 🍪
 
 I built this project while practicing **Vanilla CSS** (no frameworks, just pure CSS).  
