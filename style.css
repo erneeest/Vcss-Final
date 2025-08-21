@@ -421,5 +421,6 @@ nav{
     
     #hero-product{
     display: flex;
+    justify-self: end;
     }
 }
