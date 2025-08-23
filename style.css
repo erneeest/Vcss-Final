@@ -243,7 +243,7 @@ span{
 }
 
 /* ---------------------------- SECTIONS ---------------------------- */
-.header-mb{
+.mb{
     margin-bottom: 10rem;
 }
 
@@ -270,25 +270,17 @@ span{
     background: rgb(77, 36, 39, .3);
     backdrop-filter: blur(1rem);
 
+    box-shadow: 0px -1px 20px var(--black);
+
     position: fixed; 
     width: 100%;
     top: 0;
-    left: 0;
-    z-index: 10;    
+    z-index: 10; 
 }
 
 .web-logo{
     display: flex;
     align-items: center;
-}
-
-.hero-section-grid{
-    height: 100%;
-    align-content: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(3, 1fr); */
-    height: calc(100vh - var(--nav-height));
 }
 .left-hero-sec-grid{
     display: grid;
@@ -347,6 +339,7 @@ span{
 /* ------------------------------  MAIN  -------------------------------------- */
 
 .main-title{
+    text-align: center;
     align-self: center;
 }
 
@@ -362,6 +355,7 @@ span{
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
+    width: 100%;
 
 }
 .main-top-selling-card{
@@ -370,7 +364,7 @@ span{
     /* gap: 4rem; */
     border: 1px solid var(--primary-base);
     border-radius: 5rem;
-    width: 30rem;
+    width: 100%;
     padding: 2rem 3rem;
     background: #6b3e58 .5;
 }
@@ -404,7 +398,7 @@ span{
 /* ------------------------------  Media Queries  -------------------------------------- */
 
 
-@media (min-width: 41.25rem) {
+@media (min-width: 47.5rem) { /*760*/
 
     .cookie-bg{
         display: none;
@@ -412,17 +406,37 @@ span{
     }
 
     .hero-section-grid{
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
         align-items: end;
+        height: calc(100vh - var(--nav-height));
+        gap: 3rem;
     }
     
     #hero-product{
     display: flex;
-    justify-self: end;
     }
+
+     .main-top-selling-card{
+    gap: 4rem;
+    }
+    
+}
+
+@media (min-width: 66.25rem) {  /* 1060 */
 
     .main-top-selling-grid{
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .main-top-selling-card{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    border: 1px solid var(--primary-base);
+    border-radius: 5rem;
+    padding: 2rem 3rem;
+    background: #6b3e58 .5;
     }
 }
+
