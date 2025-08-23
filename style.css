@@ -338,25 +338,23 @@ span{
 
 /* ------------------------------  MAIN  -------------------------------------- */
 
+.main-top-selling-section{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    justify-content: center;
+    justify-items: center;
+}
+
 .main-title{
     text-align: center;
     align-self: center;
-}
-
-.main-top-selling-section{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 4fr 7fr;
-    justify-content: center;
-    justify-items: center;
 }
 
 .main-top-selling-grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
-    width: 100%;
-
+    width: 90%;
 }
 .main-top-selling-card{
     display: flex;
@@ -393,6 +391,16 @@ span{
     justify-content: center;
     align-items: center;
     padding: 1rem 5rem;
+}
+
+/* ------------------------------  Footer  -------------------------------------- */
+footer{
+    display: grid;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-top: 1px solid black;
 }
 
 /* ------------------------------  Media Queries  -------------------------------------- */
